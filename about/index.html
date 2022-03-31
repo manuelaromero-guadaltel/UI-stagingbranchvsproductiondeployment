@@ -1,0 +1,400 @@
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <title>INSPIRE Reference Validator - Test selection</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <script>
+      var cl = document.querySelector('html').classList;
+      cl.remove('no-js');
+      cl.add('has-js');
+    </script>
+    <!-- <script src="https://ec.europa.eu/wel/cookie-consent/consent.js"></script> -->
+    <script src="../lib/angularjs/angular.min.js"></script>
+    <link rel="stylesheet" href="../lib/jquery-ui/jquery-ui.min.css">
+    <script src="../lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../js/selection/externalFunctions.js"></script>
+    <script src="../js/selection/app.js"></script>
+    <script src="../js/selection/controller.js"></script>
+
+	        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="description" content="The INSPIRE Geoportal is the central European access point to the data provided by EU Member States and several EFTA countries under the INSPIRE Directive.">
+        <meta name="author" content="European Commission - Joint  Centre">
+
+        <meta property="og:title" content="INSPIRE Reference Validator">
+        <meta property="og:description" content="The purpose of the INSPIRE Reference Validator is to help data providers, solution providers and national coordinators to check whether data sets, network services and metadata meet the requirements defined in the INSPIRE Technical Guidelines. The Validator provides detailed test reports to help implementers understand how well their data, services, metadata or software solutions are doing (or where improvements may be needed).">
+        <meta property="og:url" content="http://inspire.ec.europa.eu/validator/">
+        <meta property="og:image" content="https://inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-194x194.png">
+        <meta property="og:type" content="website">
+
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#003399">
+
+        <!--<%-- CSS from the INSPIRE CDN ---%>-->
+        <link rel="stylesheet" href="ec.eu.css">
+
+        <!--<%-- JS from INSPIRE CDN --%>-->
+        <script src="https://inspire.ec.europa.eu/cdn/1.0/js/jquery.min.js"></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.0/js/popper.min.js"></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.0/js/bootstrap.min.js"></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.0/js/bootstrap-select.min.js" defer></script>
+        <script data-search-pseudo-elements src="https://inspire.ec.europa.eu/cdn/1.0/js/fontawesome.all.min.js"></script>
+
+        <!-- template custom section -->
+        <link rel="stylesheet" href="style.css">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn1.fpfis.tech.ec.europa.eu/ecl/v2.27.0/ec-preset-website/styles/ecl-ec-preset-website.css"
+      integrity="sha256-bwtkvW7BRBAEhEEsFE/ebr7fkZvb7JOUrXuZwKxCZFs= sha384-HCcnCPOZ+XvTV9wbt8WxhQ4vnZttzmmflvh1bEZPr9z6RgXPPhdEVGW4jwajw37V sha512-WHo2OIEwQkCY8PYQ2w6tmunj+6jrUzOEBUpLYAOTZyGzOWFrT8pHmNrf7ELj+WX7/iTTP57dWASjWG5PREntqQ=="
+      crossorigin="anonymous"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn1.fpfis.tech.ec.europa.eu/ecl/v2.27.0/ec-preset-website/styles/ecl-ec-preset-website-print.css"
+      integrity="sha256-z/sMzUyVW7T4w7amk6OYpCzq+lWax/057gNJtaAZMcY= sha384-pCXoyvk8WHwIyzamFkdgOBzrBaM5L45RFOmajtp6175zkSpVHIxn88EbJR01zf8m sha512-xnWEhew9uVBCIZu0darcSR+eKBLMpCHKa4vmhfrToZtv2X6u7jp9ZHb2EPBstdG0HAAMBu2eDLPJoKsnfVNzdQ=="
+      crossorigin="anonymous"
+      media="print"
+    />
+    <link type="text/css" rel="stylesheet" href="../css/validator.css" />
+  </head>
+  <body ng-app="myNgValidator">
+
+    <!-- paste the markup from the template here -->
+    <header data-ecl-auto-init="SiteHeaderStandardised" class="ecl-site-header-standardised">
+      <div class="ecl-site-header-standardised__container ecl-container">
+        <div class="ecl-site-header-standardised__top"><a
+            class="ecl-link ecl-link--standalone ecl-site-header-standardised__logo-link" href="/example"
+            aria-label="European Commission"><img alt="European Commission logo" title="European Commission"
+              class="ecl-site-header-standardised__logo-image"
+              src="../img/ec/logo--en.svg" /></a>
+          <div class="ecl-site-header-standardised__action">
+            <div class="ecl-site-header-standardised__login-container"><!--<a
+                class="ecl-link ecl-link--standalone ecl-site-header-standardised__login-toggle" href="/example"><svg
+                  focusable="false" aria-hidden="true" class="ecl-site-header-standardised__icon ecl-icon ecl-icon--s">
+                  <use xlink:href="../component-library/dist/sprites/icons.svg#general--log-in"></use>
+                </svg>Log in</a>--></div><a
+              class="ecl-link ecl-link--standalone ecl-site-header-standardised__language-selector" href="/example"
+              data-ecl-language-selector="true" aria-controls="language-list-overlay" aria-expanded="false"><span
+                class="ecl-site-header-standardised__language-icon"><svg focusable="false" aria-hidden="true"
+                  class="ecl-site-header-standardised__icon ecl-icon ecl-icon--s">
+                  <use xlink:href="../component-library/dist/sprites/icons.svg#general--language"></use>
+                </svg><span class="ecl-site-header-standardised__language-code">en</span></span>English</a>
+            <div class="ecl-site-header-standardised__search-container"><a
+                class="ecl-link ecl-link--standalone ecl-site-header-standardised__search-toggle" href="/example"
+                data-ecl-search-toggle="true" aria-controls="search-form-id" aria-expanded="false"><svg focusable="false"
+                  aria-hidden="true" class="ecl-icon ecl-icon--s">
+                  <use xlink:href="../component-library/dist/sprites/icons.svg#general--search"></use>
+                </svg>Search</a>
+          <form id="nexteuropa-europa-search-search-form" data-ecl-search-form="true"
+            class="ecl-site-header-standardised__search ecl-search-form" role="search" action="https://ec.europa.eu/search/?" method="get" >
+            <div class="ecl-form-group ecl-form-group--text-input"><label class="ecl-search-form__label ecl-form-label"
+                for="search-input-id">Search</label><input type="search" id="edit-querytext" name="QueryText"
+                class="ecl-search-form__text-input ecl-text-input" /></div><button aria-label="Search" type="submit"
+              class="ecl-search-form__button ecl-button ecl-button--search"><span class="ecl-button__container"><span
+                  class="ecl-button__label" data-ecl-label="true">Search</span><svg focusable="false" aria-hidden="true"
+                  data-ecl-icon="true" class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs">
+                  <use xlink:href="../component-library/dist/sprites/icons.svg#general--search"></use>
+                </svg></span></button>
+			<input type="hidden" name="form_build_id" value="form-HNzukaUwhdrtb67yMDfcMamU5dTPWdPx0f_pJEaMQZI" />
+			<input type="hidden" name="form_id" value="nexteuropa_europa_search_search_form" />
+          </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ecl-page-header-core">
+        <div class="ecl-container">
+          <nav class="ecl-page-header-core__breadcrumb ecl-breadcrumb-core" aria-label="You are here:"
+            data-ecl-breadcrumb-core="true">
+            <ol class="ecl-breadcrumb-core__container">
+              <li class="ecl-breadcrumb-core__segment" data-ecl-breadcrumb-core-item="static" aria-hidden="false"><a
+                  href="https://ec.europa.eu/" class="ecl-breadcrumb-core__link ecl-link ecl-link--standalone">European Commission</a><svg
+                  focusable="false" aria-hidden="true" role="presentation"
+                  class="ecl-breadcrumb-core__icon ecl-icon ecl-icon--2xs ecl-icon--rotate-90">
+                  <use xlink:href="../component-library/dist/sprites/icons.svg#ui--corner-arrow"></use>
+                </svg></li>
+                <li class="ecl-breadcrumb-core__segment" data-ecl-breadcrumb-core-item="static" aria-hidden="false"><a
+                    href="https://inspire.ec.europa.eu/" class="ecl-breadcrumb-core__link ecl-link ecl-link--standalone">INSPIRE</a><svg
+                    focusable="false" aria-hidden="true" role="presentation"
+                    class="ecl-breadcrumb-core__icon ecl-icon ecl-icon--2xs ecl-icon--rotate-90">
+                    <use xlink:href="../component-library/dist/sprites/icons.svg#ui--corner-arrow"></use>
+                  </svg></li>
+              <li class="ecl-breadcrumb-core__segment" data-ecl-breadcrumb-core-item="expandable" aria-hidden="false"><a
+                  href="https://inspire.ec.europa.eu/validator/" class="ecl-breadcrumb-core__link ecl-link ecl-link--standalone">Validator
+                  </a><svg focusable="false" aria-hidden="true" role="presentation"
+                  class="ecl-breadcrumb-core__icon ecl-icon ecl-icon--2xs ecl-icon--rotate-90">
+                  <use xlink:href="../component-library/dist/sprites/icons.svg#ui--corner-arrow"></use>
+                </svg></li>
+              <li class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__current-page" aria-current="page"
+                data-ecl-breadcrumb-core-item="static" aria-hidden="false">Test selection</li>
+            </ol>
+          </nav>
+          <h1 class="ecl-page-header-core__title">INSPIRE Reference Validator - About</h1>
+          <p class="ecl-page-header-core__description">Test your INSPIRE data, services and metadata</p>
+          <nav class="ecl-menu" aria-expanded="false" data-ecl-menu="true">
+            <div class="ecl-menu__overlay" data-ecl-menu-overlay="true"></div>
+            <div class="ecl-container ecl-menu__container"><a class="ecl-link ecl-link--standalone ecl-menu__open" href="/example"
+                data-ecl-menu-open="true"><svg focusable="false" aria-hidden="true" class="ecl-icon ecl-icon--s">
+                  <use xlink:href="../component-library/dist/sprites/icons.svg#general--hamburger"></use>
+                </svg>Menu</a>
+              <section class="ecl-menu__inner" data-ecl-menu-inner="true">
+                <header class="ecl-menu__inner-header"><button data-ecl-menu-close="true" type="submit"
+                    class="ecl-menu__close ecl-button ecl-button--text"><span
+                      class="ecl-menu__close-container ecl-button__container"><svg focusable="false" aria-hidden="true"
+                        data-ecl-icon="true" class="ecl-button__icon ecl-button__icon--before ecl-icon ecl-icon--s">
+                        <use xlink:href="../component-library/dist/sprites/icons.svg#ui--close-filled"></use>
+                      </svg><span class="ecl-button__label" data-ecl-label="true">Close</span></span></button>
+                  <div class="ecl-menu__title">Menu</div><button data-ecl-menu-back="true" type="submit"
+                    class="ecl-menu__back ecl-button ecl-button--text"><span class="ecl-button__container"><svg focusable="false"
+                        aria-hidden="true" data-ecl-icon="true"
+                        class="ecl-button__icon ecl-button__icon--before ecl-icon ecl-icon--s ecl-icon--rotate-270">
+                        <use xlink:href="../component-library/dist/sprites/icons.svg#ui--corner-arrow"></use>
+                      </svg><span class="ecl-button__label" data-ecl-label="true">Back</span></span></button>
+                </header>
+                <ul class="ecl-menu__list">
+                  <li class="ecl-menu__item" data-ecl-menu-item="true"><a href="../index.html" class="ecl-menu__link"
+                      data-ecl-menu-link="true">Home</a></li>
+                  <li class="ecl-menu__item" data-ecl-menu-item="true"><a href="../test-selection/index.html" class="ecl-menu__link"
+                          data-ecl-menu-link="true">Start Test</a></li>
+                  <li class="ecl-menu__item" data-ecl-menu-item="true"><a href="../test-reports/index.html" class="ecl-menu__link"
+                          data-ecl-menu-link="true">Test Reports</a></li>
+                  <li class="ecl-menu__item" data-ecl-has-children="true" data-ecl-menu-item="true"><a href="/example"
+                      class="ecl-menu__link" data-ecl-menu-link="true">Get support<svg focusable="false" aria-hidden="true"
+                        class="ecl-menu__link-icon ecl-icon ecl-icon--xs ecl-icon--rotate-90">
+                        <use xlink:href="../component-library/dist/sprites/icons.svg#ui--corner-arrow"></use>
+                      </svg></a>
+                    <div class="ecl-menu__mega" data-ecl-menu-mega="true">
+                      <ul class="ecl-menu__sublist">
+                        <li class="ecl-menu__subitem" data-ecl-menu-subitem="true"><a href="https://github.com/INSPIRE-MIF/helpdesk-validator/issues/new?template=problem.md"
+                            class="ecl-menu__sublink">Report a problem</a></li>
+                        <li class="ecl-menu__subitem" data-ecl-menu-subitem="true"><a href="https://github.com/INSPIRE-MIF/helpdesk-validator/issues/new?template=improvement-proposal.md"
+                            class="ecl-menu__sublink">Propose a new feature or improvement</a></li>
+                        <li class="ecl-menu__subitem" data-ecl-menu-subitem="true"><a href="https://github.com/INSPIRE-MIF/helpdesk-validator/issues/new?template=discussion.md"
+                            class="ecl-menu__sublink">Start a discussion or raise a question</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="ecl-menu__item" data-ecl-has-children="true" data-ecl-menu-item="true"><a href="/example"
+                      class="ecl-menu__link" data-ecl-menu-link="true">More on the INSPIRE Reference Validator<svg focusable="false" aria-hidden="true"
+                        class="ecl-menu__link-icon ecl-icon ecl-icon--xs ecl-icon--rotate-90">
+                        <use xlink:href="../component-library/dist/sprites/icons.svg#ui--corner-arrow"></use>
+                      </svg></a>
+                    <div class="ecl-menu__mega" data-ecl-menu-mega="true">
+                      <ul class="ecl-menu__sublist">
+                        <li class="ecl-menu__subitem" data-ecl-menu-subitem="true"><span
+                            class="ecl-menu__sub">Other instances</span></li>
+                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/etf-webapp/"
+                                class="ecl-menu__sublink">Staging instance</a></li>
+                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""
+                                class="ecl-menu__sublink">Beta instance</a></li>
+                        <li class="ecl-menu__subitem" data-ecl-menu-subitem="true"><span
+                            class="ecl-menu__sublink"></span></li>
+                        <li class="ecl-menu__subitem" data-ecl-menu-subitem="true"><span
+                            class="ecl-menu__sub">Validator API</span></li>
+                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/validator/swagger-ui.html"
+                                class="ecl-menu__sublink">Access the API</a></li>
+                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/INSPIRE-MIF/helpdesk-validator/tree/master/training%20material/2019-10-01%2B02%20JRC%20Workshop/Step-by-step%20example%20-%20API"
+                                class="ecl-menu__sublink">Example of API usage</a></li>
+                        <li class="ecl-menu__subitem" data-ecl-menu-subitem="true"><span
+                            class="ecl-menu__sublink"></span></li>
+                        <li class="ecl-menu__subitem" data-ecl-menu-subitem="true"><span
+                            class="ecl-menu__sub">Validator software</span></li>
+                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://docs.etf-validator.net/v2.0/index.html"
+                                class="ecl-menu__sublink">ETF Manuals</a></li>
+                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/INSPIRE-MIF/helpdesk-validator/releases/"
+                                class="ecl-menu__sublink">Download the INSPIRE Reference Validator</a></li>
+                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/INSPIRE-MIF/helpdesk-validator/tree/master/release%20strategy"
+                                class="ecl-menu__sublink">Release plan</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 smaller">
+                    <div class="page-header mt-5 mb-5">
+                        <h1 class="page-heading">About the INSPIRE Reference Validator</h1>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-12 text_description_home">
+					<p>The purpose of the INSPIRE Reference Validator is to help data providers, solution providers and national coordinators to check whether data sets, network services and metadata meet the requirements defined in the INSPIRE Technical Guidelines. The validator provides detailed test reports to help implementers understand how well their data, services, metadata or software solutions are doing (or where improvements may be needed).</p>
+					<p>The Validator is based on the <a href="https://github.com/inspire-eu-validation/community/wiki">Abstract and Executable Test Suites</a> agreed between Member States and the Commission in the INSPIRE Maintenance and Implementation Group. See the Roadmap for the test suites that are currently supported and our future planning.</p>
+					<p>The Validator has been developed under <a href="https://joinup.ec.europa.eu/collection/are3na">ARE3NA</a> and <a href="https://joinup.ec.europa.eu/collection/elise-european-location-interoperability-solutions-e-government/about">ELISE</a> Actions of the ISA/ISA2 Programmes.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+
+                // Select and loop the container element of the elements you want to equalise
+                $('.container').each(function () {
+
+                    // Cache the highest
+                    var highestBox = 0;
+
+                    // Select and loop the elements you want to equalise
+                    $('.columnbottom', this).each(function () {
+
+                        // If this box is higher than the cached highest then store it
+                        if ($(this).height() > highestBox) {
+                            highestBox = $(this).height();
+                        }
+
+                    });
+
+                    // Set the height of all those children to whichever was highest
+                    $('.columnbottom', this).height(highestBox);
+
+                });
+            });
+        </script>
+
+
+	</div>
+
+
+    <!-- FOOTER -->
+    <footer class="ecl-footer-standardised">
+  <div class="ecl-container ecl-footer-standardised__container">
+    <section class="ecl-footer-standardised__section ecl-footer-standardised__section1"><a href="/example"
+        class="ecl-footer-standardised__title ecl-link ecl-link--standalone">INSPIRE Reference Validator</a>
+      <div class="ecl-footer-standardised__description">This site is managed by the Directorate-General for &quot;DG
+        identification&quot;</div>
+    </section>
+    <div class="ecl-footer-standardised__section2">
+      <section class="ecl-footer-standardised__section">
+        <div class="ecl-footer-standardised__title ecl-footer-standardised__title--separator">Contact us</div>
+        <ul class="ecl-footer-standardised__list">
+          <li class="ecl-footer-standardised__list-item"><a href="/example"
+              class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Contact information of the DG</a></li>
+        </ul>
+      </section>
+      <section class="ecl-footer-standardised__section">
+        <div class="ecl-footer-standardised__title ecl-footer-standardised__title--separator">Follow us on</div>
+        <ul class="ecl-footer-standardised__list ecl-footer-standardised__list--inline">
+          <li class="ecl-footer-standardised__list-item"><a href="/example"
+              class="ecl-footer-standardised__link ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before"><svg
+                focusable="false" aria-hidden="true" class="ecl-link__icon ecl-icon ecl-icon--xs">
+                <use xlink:href="../component-library/dist/sprites/icons.svg#branded--facebook"></use>
+              </svg>&nbsp;<span class="ecl-link__label">Facebook</span></a></li>
+          <li class="ecl-footer-standardised__list-item"><a href="/example"
+              class="ecl-footer-standardised__link ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before"><svg
+                focusable="false" aria-hidden="true" class="ecl-link__icon ecl-icon ecl-icon--xs">
+                <use xlink:href="../component-library/dist/sprites/icons.svg#branded--twitter"></use>
+              </svg>&nbsp;<span class="ecl-link__label">Twitter</span></a></li>
+          <li class="ecl-footer-standardised__list-item"><a href="/example"
+              class="ecl-footer-standardised__link ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before"><svg
+                focusable="false" aria-hidden="true" class="ecl-link__icon ecl-icon ecl-icon--xs">
+                <use xlink:href="../component-library/dist/sprites/icons.svg#branded--linkedin"></use>
+              </svg>&nbsp;<span class="ecl-link__label">Linkedin</span></a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="ecl-footer-standardised__section3">
+      <section class="ecl-footer-standardised__section">
+        <div class="ecl-footer-standardised__title ecl-footer-standardised__title--separator">About us</div>
+        <ul class="ecl-footer-standardised__list">
+          <li class="ecl-footer-standardised__list-item"><a href="../about/index.html"
+              class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Information about the INSPIRE Reference Validator</a></li>
+        </ul>
+      </section>
+      <section class="ecl-footer-standardised__section">
+        <div class="ecl-footer-standardised__title ecl-footer-standardised__title--separator">Related sites</div>
+        <ul class="ecl-footer-standardised__list">
+          <li class="ecl-footer-standardised__list-item"><a href="/example"
+              class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Access the API</a></li>
+          <li class="ecl-footer-standardised__list-item"><a href="/example"
+              class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Download the Reference Reference Validator</a></li>
+          <li class="ecl-footer-standardised__list-item"><a href="/example"
+              class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Access the staging version</a></li>
+          <li class="ecl-footer-standardised__list-item"><a href="/example"
+              class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Report an issue</a></li>
+        </ul>
+      </section>
+    </div>
+    <section class="ecl-footer-standardised__section ecl-footer-standardised__section6">
+      <div class="ecl-footer-standardised__content">More information on:</div>
+      <ul class="ecl-footer-standardised__list ecl-footer-standardised__list--condensed">
+        <li class="ecl-footer-standardised__list-item"><a href="/example"
+            class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Class name 1</a></li>
+        <li class="ecl-footer-standardised__list-item"><a href="/example"
+            class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Class name 2</a></li>
+      </ul>
+    </section>
+    <section class="ecl-footer-standardised__section ecl-footer-standardised__section7"><a
+        href="https://ec.europa.eu/info/index_en"
+        class="ecl-footer-standardised__title ecl-link ecl-link--standalone">European Commission</a></section>
+    <section class="ecl-footer-standardised__section ecl-footer-standardised__section8">
+      <ul class="ecl-footer-standardised__list">
+        <li class="ecl-footer-standardised__list-item"><a href="/example"
+            class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Contact the European Commission</a></li>
+        <li class="ecl-footer-standardised__list-item"><a href="/example"
+            class="ecl-footer-standardised__link ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after"><span
+              class="ecl-link__label">Follow the European Commission on social media</span>&nbsp;<svg focusable="false"
+              aria-hidden="true" class="ecl-link__icon ecl-icon ecl-icon--xs">
+              <use xlink:href="../component-library/dist/sprites/icons.svg#ui--external"></use>
+            </svg></a></li>
+        <li class="ecl-footer-standardised__list-item"><a href="/example"
+            class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Resources for partners</a></li>
+      </ul>
+    </section>
+    <section class="ecl-footer-standardised__section ecl-footer-standardised__section9">
+      <ul class="ecl-footer-standardised__list">
+        <li class="ecl-footer-standardised__list-item"><a href="/example"
+            class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Language policy</a></li>
+        <li class="ecl-footer-standardised__list-item"><a href="/example"
+            class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Cookies</a></li>
+        <li class="ecl-footer-standardised__list-item"><a href="/example"
+            class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Privacy policy</a></li>
+        <li class="ecl-footer-standardised__list-item"><a href="/example"
+            class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Legal notice</a></li>
+        <li class="ecl-footer-standardised__list-item"><a href="/example"
+            class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Brexit content disclaimer</a></li>
+      </ul>
+    </section>
+  </div>
+</footer>
+
+<div class="balloonMessageBlue" id="hidingMessage1"><span id="baloonText1" class="ecl-form-label"></span><div class="crossToClose"><span class="ecl-form-label" onclick="closeBalloon(1)">x</span></div><div class="progressBar1" id="progressBar1"><div></div></div></div>
+<div class="balloonMessageGreen" id="hidingMessage2"><span id="baloonText2" class="ecl-form-label"></span><br><span id="baloonSubText2" class="ecl-u-type-m"></span> <div class="crossToClose"><span class="ecl-form-label" onclick="closeBalloon(2)">x</span></div><div class="progressBar2" id="progressBar2"><div></div></div></div>
+
+    <script
+      src="https://cdn1.fpfis.tech.ec.europa.eu/ecl/v2.27.0/ec-preset-website/scripts/ecl-ec-preset-website.js"
+      integrity="sha256-knt02XXQs7zdlJu/OOHAh0tF1yRqyeQ3LdLgOV+rZOU= sha384-ob5Ph2FIGHpIbnCAgc/qG8HsAOwt1X+Vt9XfWXc9uJuBa9cVNJcIKofgBHUywSQg sha512-UA8/K8LQ6Jzna2z8bwFLdPl/99Du+AqeyYTklZqvQZu8kvzBp26LcoLKypLn3AhuqMEBwlaWCbRBsIs98tPV6A=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      ECL.autoInit();
+    </script>
+
+  </body>
+</html>

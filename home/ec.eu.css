@@ -1,0 +1,423 @@
+@import url(https://inspire.ec.europa.eu/cdn/1.0/css/bootstrap.min.css);
+@import url(https://inspire.ec.europa.eu/cdn/1.0/css/bootstrap-select.min.css);
+
+/*Global*/
+h1,
+h2,
+h3,
+h4 {
+	color: #0065a2;
+}
+
+h1 {
+	font-size: 1.3rem;
+	padding-bottom: 0;
+	font-weight: bold;
+	margin: 10px 0
+}
+
+h2 {
+	font-size: 1.22rem;
+	font-weight: bold;
+	line-height: normal;
+}
+
+h3 {
+	font-size: 1.15rem;
+	font-weight: bold;
+	padding-top: 10px;
+	line-height: 1.4rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: .8rem;
+	font-weight: bold;
+	color: #404040;
+}
+
+h6 {
+	font-size: .7rem;
+	font-weight: bold;
+	color: #404040;
+}
+
+.relative {
+	position: relative
+}
+
+.bg-hover-gray:focus,
+.bg-hover-gray:hover {
+	text-decoration: none;
+	background-color: #e7e7e7;
+}
+
+.text-primary {
+	color: #0065A2 !important;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #0065A2;
+	border-color: #007bff;
+}
+
+.list-group-item.active {
+	background-color: #0065A2;
+	border-color: #0065A2;
+}
+
+/*Header*/
+.hb1 {
+	height: 100px;
+	position: relative
+}
+
+.hb1 span.mt {
+	font-size: 1.7rem;
+	line-height: normal;
+	font-weight: normal;
+	padding-bottom: 0;
+	color: #0065a2;
+	padding-left: 35px;
+	padding-top: 65px;
+	display: table-cell;
+	text-transform: uppercase
+}
+
+.hb1 a.ec-logo {
+	margin-top: 15px;
+	margin-left: 25px;
+	float: left
+}
+
+.hb2 {
+	height: 45px;
+	background-color: #0065A2
+}
+
+.hb2 span {
+	font-size: 1.30rem;
+	line-height: normal;
+	font-weight: normal;
+	padding-bottom: 0;
+	color: #fff;
+	padding-left: 35px;
+	padding-top: 10px;
+	display: table-cell
+}
+
+.hb3 {
+	background-color: #074a8b;
+	color: #fff;
+	padding-bottom: 1px
+}
+
+.hb4 {
+	background-color: #f8f8f8;
+	padding: 0px;
+}
+
+.topm {
+	position: absolute;
+	right: 0;
+	top: -0;
+	text-align: right
+}
+
+.topm .bootstrap-select {
+	margin-bottom: 10px
+}
+
+.topm a {
+	color: #0065a2;
+	/*font-size:.7rem*/
+}
+
+.topm ul.lnk {
+	list-style-type: none;
+	margin: 0 30px 0 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.topm li {
+	display: inline
+}
+
+.topm ul.lnk>li+li::before {
+	content: "|";
+	padding: 0 5px;
+	color: #000;
+}
+
+.bootstrap-select>.dropdown-toggle {
+	margin-top: 3px
+}
+
+/*Breadcrumbs*/
+.breadcrumb {
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+	font-size: .9rem;
+	line-height: 1.6rem;
+	overflow: hidden
+}
+
+.breadcrumb li {
+	white-space: nowrap;
+}
+
+.breadcrumb a:link,
+.breadcrumb a:visited,
+.breadcrumb a:active,
+.breadcrumb a:focus {
+	color: #fff
+}
+
+.breadcrumb>li+li::before {
+	color: #fff;
+	content: ">";
+	padding: 0 5px;
+}
+
+.breadcrumb>.active {
+	color: #fff;
+	max-width: 500px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/*Nav*/
+.navbar {
+	padding: 0
+}
+
+/*Footer*/
+footer {
+	font-size: .9rem;
+	margin-top: 2rem
+}
+
+footer .ec-inspire-logo {
+	width: 140px
+}
+
+footer h4 {
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 1px dotted #fff;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-bottom: 4px;
+	position: relative
+}
+
+.ft2 a:link,
+.ft2 a:visited,
+.ft2 a:focus,
+.ft2 a:active {
+	color: #fff !important
+}
+
+.ft1 {
+	background-color: #074a8b;
+	color: #fff;
+	padding: 5px 0
+}
+
+.ft2 {
+	background-color: #0065a2;
+	color: #fff;
+	padding: 20px 0
+}
+
+.ft2 ol {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	list-style-position: inside;
+	/*font-size:1rem*/
+}
+
+.ft3 {
+	background-color: #fff;
+	padding: 6px 0
+}
+
+.ft3 ol {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	list-style-position: inside;
+	font-size: .9rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ft3 ol li {
+	display: inline-block
+}
+
+.ft3 ol>li+li::before {
+	color: #404040;
+	content: "|";
+	padding: 0 5px;
+}
+
+/*
+.ft3 a:link, footer a:visited, footer a:focus, footer a:active{
+    color: #0065a2;
+}
+*/
+footer .social {
+	margin-left: 25px;
+	display: inline-block;
+	font-size: 2rem;
+	vertical-align: middle;
+}
+
+footer .social div {
+	display: inline-flex;
+}
+
+footer .social div a {
+	margin-left: 5px
+}
+
+footer .navbar-toggle {
+	float: none;
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	text-decoration: none;
+}
+
+footer .navbar-toggle.collapsed:after {
+	content: "+";
+	float: right
+}
+
+footer .navbar-toggle:after {
+	content: "-";
+	float: right
+}
+
+/* Data Teble Customizations */
+/*
+.dataTable {
+    border-bottom: 2px solid #074a8b;
+    border-top: 2px solid #074a8b;
+    table-layout: fixed;
+}
+.dataTable input{
+    margin:0 5px
+}
+.dataTable > tbody > tr > td, .dataTable > tbody > tr > th, .dataTable > tfoot > tr > td, .dataTable > tfoot > tr > th, .dataTable > thead > tr > td, .dataTable > thead > tr > th {
+    padding:3px
+}
+.dataTable .input-sm {
+    border: 0 none;
+    box-shadow: unset;
+    font-weight: normal;
+    padding: 0;
+    width:90%
+}
+.dataTables_wrapper{
+    overflow:hidden
+}
+.dataTables_wrapper .row{
+    margin-bottom:0
+}
+.dataTables_wrapper .row:first-child, .dataTables_wrapper .row:last-child{
+    padding:5px 0;
+    background-color: #074a8b;
+    color:#fff;
+    font-weight:bold
+}
+.dataTables_wrapper .row:first-child .col-sm-6 div, .dataTables_wrapper .row:last-child .col-sm-5 div, .dataTables_wrapper .row:last-child .col-sm-7 div{
+    padding-left:5px;
+    padding-right:5px
+}
+.dataTables_wrapper .dataTables_paginate ul.pagination{
+    vertical-align:middle;
+    font-size:1.2rem
+}
+.dataTables_wrapper .pagination .active, .dataTables_wrapper .pagination .active a{
+    background-color:#fff;
+    border-color:#ddd;
+    color:#0065a2
+}
+.dataTables_wrapper .dataTables_paginate {
+    display: inline-block;
+    float: right;
+    margin-top: 5px;
+    right: 0;
+}
+.dataTables_wrapper  .pagination > li > a, .pagination > li > span {
+    padding: 4px 8px;
+}
+.dataTables_wrapper label{
+    margin:0
+}
+.dataTables_wrapper .bottom {
+    font-size: 0.8rem;
+}
+.dataTables_wrapper select.input-sm{
+    height: 25px;
+    padding: 2px 7px;	
+}
+.dataTables_wrapper .dataTables_length {
+    display: inline-block;
+}
+.dataTables_wrapper .dataTables_info {
+    display: inline-block;
+    margin-left: 20px;
+}
+*/
+
+@media (max-width: 767px) {
+	.hb1 {
+		height: 84px
+	}
+
+	.hb1 a.ec-logo {
+		width: 140px;
+		margin-left: 0
+	}
+
+	.hb1 a.ec-logo img {
+		width: 100%
+	}
+
+	.hb1 span.mt {
+		font-size: 1.2rem;
+		padding-left: 15px;
+		padding-top: 55px
+	}
+
+	.hb2 span {
+		font-size: .9rem;
+		padding-left: 15px;
+		line-height: 22px
+	}
+
+	.right {
+		text-align: left
+	}
+}
+
+@media (max-width: 479px) {
+	.hb2 span {
+		font-size: .8rem;
+		padding-left: 15px;
+		line-height: 24px
+	}
+}

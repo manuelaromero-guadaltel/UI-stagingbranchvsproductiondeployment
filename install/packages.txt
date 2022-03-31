@@ -1,0 +1,3 @@
+npm install @ecl/eu-resources-icons@2.27.0
+
+npm install @ecl/ec-resources-icons@2.27.0

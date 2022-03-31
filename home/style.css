@@ -1,0 +1,142 @@
+a {
+	color: #074B8C;
+	/*text-decoration: none;*/
+	word-wrap: break-word;
+}
+
+a:hover {
+	color: #03478E;
+	text-decoration: none;
+}
+
+.validator-card {
+	background-color: #fff;
+	color: #333;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	padding: 20px 0 0 0;
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.06);
+	transition: 0.25s;
+	margin-bottom: 30px;
+}
+
+.validator-card .validator-card-description {
+	/*font-size: 20px;*/
+	line-height: 24px;
+	/*color: #808080;*/
+	transform: translate(0, 0);
+}
+
+.validator-card-description {
+	/*font-size: 24px;*/
+	/*font-weight: 300;*/
+	/*color: #888;*/
+	width: 85%;
+	display: block;
+	text-align: center;
+	/*line-height: 36px;*/
+	margin: 30px auto 30px auto;
+}
+
+.validator-card-title {
+	font-size: 18px;
+	font-weight: 500;
+	/*color: #a0a0a0;*/
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	/*line-height: 32px;*/
+	margin-bottom: 30px;
+}
+
+.validator-card-title-test-data {
+	font-size: 18px;
+	font-weight: 500;
+	/*color: #a0a0a0;*/
+	margin: 0 auto;
+	display: block;
+	/*line-height: 32px;*/
+	margin-bottom: 30px;
+}
+
+.validator-card-image {
+	margin: 0 auto;
+	display: block;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+}
+
+.valiadtor_h1_title {
+	font-size: 1.8em;
+	margin-top: 12px;
+	margin-left: 30px;
+}
+
+.validator_description_text {
+	text-align: justify;
+	margin-top: 10px;
+	width: 85%;
+}
+
+.zindex2000 {
+	z-index: 2000;
+}
+
+.fontsize1_8em {
+	font-size: 1.8em;
+}
+
+.fontsize1_2em {
+	font-size: 1.2em;
+}
+
+.fontsize2em {
+	font-size: 2.0em;
+}
+
+.marginTop150Bottom150 {
+	margin-bottom: 150px;
+	margin-top: 150px
+}
+
+.validator_error_description {
+	font-size: 1.2em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*color: #999;*/
+	line-height: 30px
+}
+
+.fontsize130 {
+	font-size: 130px
+}
+
+.fontsize180 {
+	font-size: 180px
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.text_description_home {
+	text-align: justify;
+}
+
+.inspire-blue {
+	color: #0065a2;
+}
+
+.btn-inspire-blue {
+	color: #fff;
+	background-color: #0065a2;
+	border-color: #0065a2;
+}
+
+.btn-inspire-blue:hover {
+	color: #fff;
+	background-color: #074a8b;
+	border-color: #074a8b;
+}
