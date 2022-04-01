@@ -55,12 +55,12 @@ ngApp.controller('myValidatorController', function($scope) {
 			dateParts = dateTimeParts[0].split('-'),
 			dateFormatted;
 
-		var testDate = new Date(dateParts[0], dateParts[1], dateParts[2], timeParts[0], timeParts[1], 0);
+		var testDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2], timeParts[0], timeParts[1], 0);
 		offset = ((-1) * offset) / 60;
 		correctedTestDate = testDate.addHours(offset);
 
 		var year = correctedTestDate.getFullYear();
-		var month = correctedTestDate.getMonth();
+		var month = correctedTestDate.getMonth() + 1;
 		var day = correctedTestDate.getDate();
 		var hours = correctedTestDate.getHours();
 		var minutes = correctedTestDate.getMinutes();
@@ -633,6 +633,7 @@ ngApp.controller('myValidatorController', function($scope) {
 		} else {
 			testSuiteId = item.replace("//v2", "/v2");
 			testSuiteId = testSuiteId.replace($scope.urlValidator + "ExecutableTestSuites/", "");
+			testSuiteId = testSuiteId.replace("https://yzyiqfakm4.execute-api.eu-west-1.amazonaws.com/validator/v2/ExecutableTestSuites/", "");
 			testSuiteId = testSuiteId.replace(".json", "");
 			if (testSuiteId.substring(0,3) != "EID") testSuiteId = "EID" + testSuiteId;
 			var testSuiteDesc = testSuiteId;
